@@ -16,6 +16,22 @@ var artist = "";
 var movie = "";
 var song = "";
 
+//setting defaults for if user does not enter a search item
+if (movie === "" && command === "movie-this") {
+    movie = "mr nobody";
+    console.log("You forgot to enter a movie. Here is one to view!");
+};
+
+if (song === "" && command === "spotify-this-song") {
+    song = "the sign ace of base";
+    console.log("You forgot to enter a song. Here is one to view!");
+};
+
+if (artist === "" && command === "concert-this") {
+    artist = "opiuo";
+    console.log("You forgot to enter an artist. Here is one to view!");
+};
+
 //For-loop to handle multiple word searches
 function multipleWords() {
     for (var i = 3; i < nodeArgs.length; i++) {
@@ -56,7 +72,8 @@ function findConcert() {
 
 //spotify-this-song command using Spotify API
 function findSong() {
-    if (command === "spotify-this-song") {
+
+   if (command === "spotify-this-song") {
 
         spotify.search({
                 type: 'track',
@@ -113,20 +130,20 @@ function findMovie() {
 };
 
 //do-what-it-says command using fs require
-function doWhatItSays() {
-    if (command === "do-what-it-says") {
-        fs.readFile("randdom.txt", "utf8", function (error, data) {
-            if (error) {
-                return console.log(error);
-            }
+// function doWhatItSays() {
+//     if (command === "do-what-it-says") {
+//         fs.readFile("randdom.txt", "utf8", function (error, data) {
+//             if (error) {
+//                 return console.log(error);
+//             }
 
-            var dataArr = data.split(",");
-        });
-    };
-};
+//             var dataArr = data.split(",");
+//         });
+//     };
+// };
 
 multipleWords();
 findConcert();
 findSong();
 findMovie();
-doWhatItSays();
+// doWhatItSays();
