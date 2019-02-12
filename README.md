@@ -1,13 +1,18 @@
-# Liri Node App
-Language Interpretation and Recognition Interface using node.js
+# LIRI Bot
+Language Interpretation and Recognition Interface is a CLI using node.js
 
 
 \\This is a tool that will assist in doing the following basic searches:
-**Search on Bands In Town for a band and list any upcoming events
-**Search on Spotify for a specific song
-**Search on the Open Movies Database for a specific movie
+
+*Search Bands In Town for artist of choice and list most popular upcoming event
+
+**Search Spotify for a specific song of choice
+
+**Search Open Movies Database (OMDB) for a specific movie of choice
+
 
 \\Instructions:
+
 **Clone repo.
 
 **Add .env file in the root directory with your spotify API keys like this: SPOTIFY_ID= SPOTIFY_SECRET=
@@ -22,9 +27,8 @@ spotify-this-song
 movie-this
 do-what-it-says
 
-\\Note:
-The 'do-what-it-says' command feature will automatically read the random.txt file and execute the command search in it.
 
+\\Notes:
+**The 'do-what-it-says' command feature will automatically read the random.txt file and execute the command search in it.
 
-\\Additional Notes:
-Please view screen-shots of functioning app saved in the images folder
+**Please view screen-shots of functioning app saved in the images folder for reference 
