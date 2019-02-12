@@ -11,7 +11,7 @@ Language Interpretation and Recognition Interface is a CLI using node.js
 **Search Open Movies Database (OMDB) for a specific movie of choice
 
 
-\\Instructions:
+\\INSTRUCTIONS:
 
 **Clone repo.
 
@@ -28,7 +28,7 @@ movie-this
 do-what-it-says
 
 
-\\Notes:
+\\NOTES:
 **The 'do-what-it-says' command feature will automatically read the random.txt file and execute the command search in it.
 
 **Please view screen-shots of functioning app saved in the images folder for reference 
